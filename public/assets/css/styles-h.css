@@ -1,0 +1,170 @@
+/* Estilos generales */
+body {
+    background-color: #0C222F;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la navegación */
+header {
+    background-color: #0c1a27;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #32B61C; /* Verde */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #FEF414; /* Amarillo */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700; /* Amarillo más claro al pasar el cursor */
+}
+
+/* Estilo de la sección de habilidades */
+.habilidades-section {
+    padding: 40px;
+    background-color: #153044;
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.habilidades-section h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.habilidades-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.habilidades-profesionales,
+.habilidades-tecnicas {
+    flex-basis: 48%;
+}
+
+.habilidad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.habilidad-nombre {
+    font-weight: bold;
+}
+
+.barra-progreso {
+    width: 60%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progreso {
+    height: 100%;
+    background-color: #32B61C; /* Verde para el progreso */
+    border-radius: 5px;
+}
+
+.progreso-texto {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    line-height: 10px;
+    padding-right: 5px;
+    font-size: 14px;
+    color: #0D1125; /* Color del texto de porcentaje */
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+        flex-wrap: wrap; /* Permite que los enlaces se envuelvan */
+    }
+
+    nav a {
+        margin: 5px 10px; /* Reduce el margen en pantallas pequeñas */
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+    }
+
+    .habilidades-section {
+        padding: 20px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .habilidades-section h2 {
+        font-size: 24px; /* Ajusta el tamaño del encabezado */
+    }
+
+    .habilidades-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea a la izquierda */
+    }
+
+    .habilidades-profesionales,
+    .habilidades-tecnicas {
+        flex-basis: 100%; /* Cada sección ocupa el 100% del ancho */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px; /* Ajusta el tamaño del logo */
+    }
+
+    nav a {
+        font-size: 14px; /* Ajusta el tamaño de la fuente aún más */
+        padding: 8px; /* Reduce el padding */
+    }
+
+    .habilidades-section h2 {
+        font-size: 20px; /* Ajusta el tamaño del encabezado */
+    }
+
+    .habilidad-nombre {
+        font-size: 14px; /* Ajusta el tamaño del texto de las habilidades */
+    }
+
+    .barra-progreso {
+        width: 100%; /* La barra de progreso ocupa el 100% del ancho */
+    }
+
+    .progreso-texto {
+        font-size: 12px; /* Ajusta el tamaño del texto de porcentaje */
+    }
+}

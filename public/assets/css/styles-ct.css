@@ -1,0 +1,112 @@
+/* Estilos generales */
+body {
+  background-color: #0C222F;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0c1a27;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #32B61C; /* Verde */
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav a {
+  color: #FEF414; /* Amarillo */
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.header-nav a:hover {
+  background-color: #ffd700; /* Amarillo más claro */
+}
+
+.contact-section {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #FFFF; /* Amarillo */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info .contact-item {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info .contact-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .header-nav {
+      margin-top: 10px;
+      flex-wrap: wrap; /* Permite que los enlaces se envuelvan */
+  }
+
+  .header-nav a {
+      margin-left: 10px; /* Reduce el margen en pantallas pequeñas */
+      font-size: 14px; /* Ajusta el tamaño de la fuente */
+  }
+
+  .contact-section {
+      padding: 20px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .contact-section h2 {
+      font-size: 20px; /* Ajusta el tamaño del encabezado */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 20px; /* Ajusta el tamaño del título */
+  }
+
+  .header-nav a {
+      font-size: 12px; /* Ajusta el tamaño de la fuente aún más */
+      padding: 8px; /* Reduce el padding */
+  }
+
+  .contact-info .contact-item p {
+      font-size: 14px; /* Ajusta el tamaño del texto en los ítems de contacto */
+  }
+}

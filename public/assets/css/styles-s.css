@@ -1,0 +1,163 @@
+/* Estilos generales */
+body {
+  background-color: #0C222F;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos de la navegación */
+header {
+  background-color: #0c1a27;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
+}
+
+/* Estilo para el texto "M.J" */
+.logo {
+  color: #32B61C; /* Verde */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #FEF414; /* Amarillo */
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700; /* Amarillo más claro al pasar el cursor */
+}
+
+/* Sección de "Sobre Mí" */
+.about-section {
+  background-color: #153044;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  color: #B5CFA9; /* Color del texto principal */
+}
+
+.about-section h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+}
+
+.about-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.personal-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  color: #fff;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
+}
+
+.personal-details div {
+  width: 45%;
+  min-width: 200px; /* Ancho mínimo para asegurar que el contenido no se comprima demasiado */
+}
+
+.personal-details h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.personal-details p {
+  margin: 5px 0;
+}
+
+.highlight {
+  color: #32B61C; /* Verde para los títulos y datos importantes */
+}
+
+.cv-button {
+  display: block;
+  width: 200px;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #fff;
+  color: #0C222F;
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+      align-items: flex-start; /* Alinear a la izquierda */
+  }
+
+  nav {
+      margin-top: 10px; /* Espacio entre logo y navegación */
+  }
+
+  .about-section {
+      padding: 20px; /* Reducir padding en pantallas pequeñas */
+      margin: 20px auto; /* Reducir margen en pantallas pequeñas */
+  }
+
+  .about-section h1 {
+      font-size: 24px; /* Reducir tamaño de encabezado */
+  }
+
+  .about-section p {
+      font-size: 15px; /* Reducir tamaño de texto */
+  }
+
+  .personal-details {
+      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+      align-items: center; /* Centrar elementos */
+  }
+
+  .personal-details div {
+      width: 100%; /* Hacer que los div ocupen el ancho completo */
+      margin-bottom: 20px; /* Espacio entre detalles personales */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+      font-size: 20px; /* Reducir tamaño de logo */
+  }
+
+  nav a {
+      font-size: 16px; /* Reducir tamaño de fuente en enlaces */
+      margin: 0 10px; /* Reducir margen entre enlaces */
+  }
+
+  .cv-button {
+      width: 100%; /* Hacer el botón ocupar todo el ancho en pantallas pequeñas */
+  }
+}
